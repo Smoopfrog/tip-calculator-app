@@ -22,4 +22,48 @@ h1 {
   margin: auto;
   padding: 30px;
   border-radius: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.inputs {
+  flex: 1;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+
+h2 {
+  color: hsl(186, 14%, 43%);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input {
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  width: 100%;
+  padding: 5px;
+  font-family: "Space Mono", monospace;
+  border-radius: 3px;
+  color: hsl(183, 100%, 15%);
+  font-size: 24px;
+}
+
+textarea:focus,
+input:focus {
+  outline: solid hsl(172, 67%, 45%);
+}
+
+.bill-container,
+.tip-container {
+  margin-bottom: 24px;
+}
+
+.results {
+  flex: 1;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
 }
