@@ -37,7 +37,7 @@
       <div class="inputs">
         <div class="bill-container">
           <h2>Bill</h2>
-          <input placeholder="0" />
+          <input placeholder="0" type="number" step="1" min="0"/>
         </div>
         <div class="tip-container">
           <h2>Select Tip %</h2>
@@ -47,13 +47,18 @@
             <button class="tip-btn">15%</button>
             <button class="tip-btn">25%</button>
             <button class="tip-btn">50%</button>
-            <input placeholder="Custom" />
+            <input
+              class="custom-tip"
+              placeholder="Custom"
+              type="number"
+              step="1"
+            />
           </div>
         </div>
 
         <div>
           <h2>Number of People</h2>
-          <input placeholder="0" />
+          <input placeholder="1" type="number" step="1" min="1"/>
         </div>
       </div>
       <div class="results">
