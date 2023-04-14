@@ -94,6 +94,18 @@ input:focus {
   font-family: "Space Mono", monospace;
 }
 
+button:active {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.tip-btn.active {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.active#tip {
+  border: solid 2px hsl(172, 67%, 45%);
+}
+
 .custom-tip {
   font-size: 16px;
 }
