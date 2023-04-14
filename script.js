@@ -1,10 +1,10 @@
 const calculateTip = (total, tip, people) => {
-  const splitTip = ((total * tip) / people).toFixed(2);
+  const splitTip = ((total * (tip / 100)) / people).toFixed(2);
   return `$${splitTip}`;
 };
 
 const calculateSplitTotal = (total, tip, people) => {
-  const splitTotal = ((total * (1 + tip)) / people).toFixed(2);
+  const splitTotal = ((total * (1 + tip / 100)) / people).toFixed(2);
   return `$${splitTotal}`;
 };
 
