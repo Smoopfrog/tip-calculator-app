@@ -1,15 +1,26 @@
 const calculateTip = (total, tip, people) => {
-  return (total * tip) / people;
+  const splitTip = ((total * tip) / people).toFixed(2);
+  return `$${splitTip}`;
 };
 
-const calculateTotal = (total, tip, people) => {
-  return (total * (1 + tip)) / people;
+const calculateSplitTotal = (total, tip, people) => {
+  const splitTotal = ((total * (1 + tip)) / people).toFixed(2);
+  return `$${splitTotal}`;
 };
 
 const calculate = (event) => {
   event.preventDefault();
 
-  console.log("hello");
+  const bill = +document.getElementById("bill").value;
+  const tipPercentage = +document.getElementsByClassName("active")[0].value;
+  const people = +document.getElementById("people").value;
+
+  if (bill && tipPercentage && people) {
+    const splitTip = calculateTip(bill, tipPercentage, people);
+    const splitTotal = calculateSplitTotal(bill, tipPercentage, people);
+    document.getElementById("split-tip").innerHTML = splitTip;
+    document.getElementById("split-total").innerHTML = splitTotal;
+  }
 };
 
 const tipHandler = (event) => {
