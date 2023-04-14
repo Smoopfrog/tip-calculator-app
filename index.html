@@ -37,7 +37,7 @@
       <div class="inputs">
         <div class="bill-container">
           <h2>Bill</h2>
-          <input placeholder="0" type="number" step="1" min="0"/>
+          <input placeholder="0" type="number" step="1" min="0" />
         </div>
         <div class="tip-container">
           <h2>Select Tip %</h2>
@@ -58,25 +58,25 @@
 
         <div>
           <h2>Number of People</h2>
-          <input placeholder="1" type="number" step="1" min="1"/>
+          <input placeholder="1" type="number" step="1" min="1" />
         </div>
       </div>
       <div class="results">
-        <div>
+        <div class="result-container">
           <div>
-            <div>Tip Amount</div>
-            <div>/ person</div>
+            <div class="result-title">Tip Amount</div>
+            <div class="person">/ person</div>
           </div>
-          <div>$0.00</div>
+          <div id="split-tip">$0.00</div>
         </div>
-        <div>
+        <div class="result-container">
           <div>
-            <div>Total</div>
-            <div>/ person</div>
+            <div class="result-title">Total</div>
+            <div class="person">/ person</div>
           </div>
-          <div>$0.00</div>
+          <div id="split-total">$0.00</div>
         </div>
-        <button>Reset</button>
+        <button class="reset-btn">Reset</button>
       </div>
     </div>
     <div class="attribution">
