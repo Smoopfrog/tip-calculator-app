@@ -32,7 +32,7 @@ h1 {
 
 h2 {
   color: hsl(186, 14%, 43%);
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 5px;
 }
 
@@ -72,6 +72,10 @@ input::-webkit-inner-spin-button {
 textarea:focus,
 input:focus {
   outline: solid hsl(172, 67%, 45%);
+}
+
+#tip:focus {
+  outline: none;
 }
 
 .bill-container,
@@ -114,6 +118,16 @@ button:active {
 
 .custom-tip {
   font-size: 16px;
+}
+
+.people-header {
+  display: flex;
+  justify-content: space-between;
+} 
+
+.error {
+  display: none;
+  color: red;
 }
 
 .results {

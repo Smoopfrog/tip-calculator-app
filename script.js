@@ -15,6 +15,12 @@ const calculate = (event) => {
   const tipPercentage = +document.getElementsByClassName("active")[0].value;
   const people = +document.getElementById("people").value;
 
+  if (people === 0) {
+    document.getElementsByClassName("error")[0].style.display = "block";
+  } else {
+    document.getElementsByClassName("error")[0].style.display = "none";
+  }
+
   if (bill && tipPercentage && people) {
     const splitTip = calculateTip(bill, tipPercentage, people);
     const splitTotal = calculateSplitTotal(bill, tipPercentage, people);

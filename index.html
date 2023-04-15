@@ -49,11 +49,41 @@
         <div class="tip-container">
           <h2>Select Tip %</h2>
           <div class="tip-options">
-            <button onclick="tipHandler(event); calculate(event)" class="tip-btn" value="5">5%</button>
-            <button onclick="tipHandler(event); calculate(event)" class="tip-btn" value="10">10%</button>
-            <button onclick="tipHandler(event); calculate(event)" class="tip-btn" value="15">15%</button>
-            <button onclick="tipHandler(event); calculate(event)" class="tip-btn" value="25">25%</button>
-            <button onclick="tipHandler(event); calculate(event)" class="tip-btn" value="50">50%</button>
+            <button
+              onclick="tipHandler(event); calculate(event)"
+              class="tip-btn"
+              value="5"
+            >
+              5%
+            </button>
+            <button
+              onclick="tipHandler(event); calculate(event)"
+              class="tip-btn"
+              value="10"
+            >
+              10%
+            </button>
+            <button
+              onclick="tipHandler(event); calculate(event)"
+              class="tip-btn"
+              value="15"
+            >
+              15%
+            </button>
+            <button
+              onclick="tipHandler(event); calculate(event)"
+              class="tip-btn"
+              value="25"
+            >
+              25%
+            </button>
+            <button
+              onclick="tipHandler(event); calculate(event)"
+              class="tip-btn"
+              value="50"
+            >
+              50%
+            </button>
             <input
               id="tip"
               onfocus="tipHandler(event)"
@@ -67,7 +97,10 @@
         </div>
 
         <div>
-          <h2>Number of People</h2>
+          <div class="people-header">
+            <h2>Number of People</h2>
+            <h2 class="error">Can't be 0</h2>
+          </div>
           <input
             id="people"
             oninput="calculate(event)"
