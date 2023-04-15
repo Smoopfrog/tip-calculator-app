@@ -94,8 +94,14 @@ input:focus {
   font-family: "Space Mono", monospace;
 }
 
+button:hover {
+  cursor: pointer;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+}
 button:active {
-  background-color: hsl(172, 67%, 45%);
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(172, 67%, 45%);
 }
 
 .tip-btn.active {
